@@ -87,11 +87,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 768px) {
-  .hero-logo {
-    display: flex;
-  }
-}
 
 .logo {
   margin-left: auto;
@@ -114,21 +109,47 @@ img {
   width: 283px;
   margin: 0 auto;
 }
+
 .blanket2 {
   display: none;
 }
-.hero-title {
-  font-size: 8px;
-}
 @media screen and (min-width: 768px) {
-  .hero-title {
-    font-size: 13px;
+  .hero-container {
+    position: relative;
+    height: 600px;
+  }
+  .blanket1 {
+    width: 521px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  .blanket2 {
+    display: block;
+    width: 619px;
+    position: absolute;
+    left: 300px;
+    bottom: 20px;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-title {
-    font-size: 40px;
+  .hero-container {
+    height: 600px;
   }
+
+  .blanket1 {
+    width: 750px;
+  }
+  .blanket2 {
+    width: 891px;
+    left: 546px;
+  }
+}
+
+.hero-title {
+  font-size: 8px;
 }
 
 .hero-title-main {
@@ -137,11 +158,23 @@ img {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
+  .hero-logo {
+    display: flex;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: 13px;
+  }
   .hero-title-main {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 19px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 40px;
+  }
   .hero-title-main {
     font-size: 53px;
   }
@@ -155,7 +188,7 @@ img {
 }
 
 .consist-description {
-  font-size: 124px;
+  font-size: 24px;
 }
 .consist-title-list {
   color: #e27601;
