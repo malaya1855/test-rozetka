@@ -1,0 +1,140 @@
+body {
+  font-family: "Russo One", sans-serif;
+}
+h1 {
+  font-size: 6pt;
+  /* font-size: 30pt; */
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-size: 30pt;
+}
+h3 {
+  font-size: 25pt;
+}
+
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* reset end */
+
+.container {
+  min-width: 320px;
+  max-width: 331px;
+  padding-top: 31px;
+  padding-bottom: 44px;
+  /* padding: 0 16px; */
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1028px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1539px;
+    padding: 0 15px;
+  }
+}
+/* <!-- block 1 - hero --> */
+
+.hero,
+.prices,
+.advantages {
+  background-color: #333087;
+  color: #fff;
+}
+.hero {
+  background-image: url("/images/stars.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 185px;
+}
+.blanket1 {
+  width: 283px;
+  margin: 0 auto;
+}
+.blanket2 {
+  display: none;
+}
+.hero-title-main {
+  font-size: 11pt;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  /* font-size: 40pt; */
+}
+
+.list-adv {
+  list-style: none;
+  display: flex;
+}
+
+.consist-description {
+  font-size: 18pt;
+}
+.consist-title-list {
+  color: #e27601;
+}
+.prices {
+  background-image: url("/images/stars&clouds.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.prices-title {
+  font-size: 37pt;
+  text-transform: uppercase;
+}
+.sample-list {
+  display: flex;
+}
+.sample-title {
+  font-size: 25pt;
+}
+.logo-smart {
+  font-size: 35pt;
+}
+.tagline {
+  text-transform: uppercase;
+}
