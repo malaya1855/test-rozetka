@@ -2,17 +2,15 @@ body {
   font-family: "Russo One", sans-serif;
 }
 h1 {
-  font-size: 6pt;
-  /* font-size: 30pt; */
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
 h2 {
-  font-size: 30pt;
+  font-size: 40px;
 }
 h3 {
-  font-size: 25pt;
+  font-size: 33px;
 }
 
 /* reset start */
@@ -54,21 +52,22 @@ img {
 .container {
   min-width: 320px;
   max-width: 331px;
-  padding-top: 31px;
-  padding-bottom: 44px;
-  /* padding: 0 16px; */
+  /* padding-top: 31px;
+  padding-bottom: 44px; */
+  padding: 0 23px;
   margin: 0 auto;
   outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1028px;
+    padding: 0 53px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1539px;
-    padding: 0 15px;
+    padding: 0 48px;
   }
 }
 /* <!-- block 1 - hero --> */
@@ -80,17 +79,37 @@ img {
   color: #fff;
 }
 .hero {
+  padding-top: 31px;
+  padding-bottom: 44px;
+
   background-image: url("/images/stars.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .hero-logo {
+    display: flex;
+  }
+}
+
 .logo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
   width: 185px;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 247px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 345px;
+  }
+}
+
 .blanket1 {
   width: 283px;
   margin: 0 auto;
@@ -98,12 +117,37 @@ img {
 .blanket2 {
   display: none;
 }
+.hero-title {
+  font-size: 8px;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 40px;
+  }
+}
+
 .hero-title-main {
-  font-size: 11pt;
+  font-size: 15px;
   margin-top: 16px;
   margin-bottom: 30px;
-  /* font-size: 40pt; */
 }
+@media screen and (min-width: 768px) {
+  .hero-title-main {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title-main {
+    font-size: 53px;
+  }
+}
+
+/* <!-- block 2 - advantages --> */
 
 .list-adv {
   list-style: none;
@@ -111,7 +155,7 @@ img {
 }
 
 .consist-description {
-  font-size: 18pt;
+  font-size: 124px;
 }
 .consist-title-list {
   color: #e27601;
@@ -123,17 +167,17 @@ img {
   background-size: cover;
 }
 .prices-title {
-  font-size: 37pt;
+  font-size: 49px;
   text-transform: uppercase;
 }
 .sample-list {
   display: flex;
 }
 .sample-title {
-  font-size: 25pt;
+  font-size: 33px;
 }
 .logo-smart {
-  font-size: 35pt;
+  font-size: 47px;
 }
 .tagline {
   text-transform: uppercase;
