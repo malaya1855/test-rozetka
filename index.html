@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
@@ -20,8 +20,11 @@
           <div class="hero-logo">
             <img class="logo" src="./images/Logo.png" alt="Logo Smart" />
             <div>
-              <h1 class="hero-title">Ковдра</h1>
-              <h1 class="hero-title-main">Fine Dream Summer</h1>
+              <h1 class="hero-title-main">
+                <span class="hero-title">Ковдра</span> <br />
+                Fine Dream Summer
+              </h1>
+              
             </div>
           </div>
 
@@ -42,22 +45,25 @@
       <section class="advantages">
         <div class="container">
           <ul class="list-adv">
-            <li>
-              <h3>Наповнювач:</h3>
-              <p>антиалергійне 100% силіконізоване волокно</p>
+            <li class="item-adv">
+              <p class="advantages-title">Наповнювач:</p>
+              <p class="advantages-description">
+                антиалергійне 100% <br />
+                силіконізоване волокно
+              </p>
             </li>
-            <li>
-              <h3>Тканина чохла:</h3>
-              <p>Мікрофібра</p>
+            <li class="item-adv">
+              <p class="advantages-title">Тканина чохла:</p>
+              <p class="advantages-description">Мікрофібра</p>
             </li>
-            <li>
-              <p>Висока якість</p>
+            <li class="item-adv">
+              <p class="advantages-description">Висока якість</p>
             </li>
-            <li>
-              <p>Гіпоалергенна</p>
+            <li class="item-adv">
+              <p class="advantages-description">Гіпоалергенна</p>
             </li>
           </ul>
-          <img src="./images/icons_adv.png" alt="Advantages" />
+          <!-- <img src="./images/icons_adv.png" alt="Advantages" /> -->
         </div>
       </section>
       <!-- block 3 - consist-->
@@ -67,55 +73,71 @@
           <p>Чохол з білої мікрофібри</p>
           <p>Хлопкопон</p>
           <ul class="consist-list">
-            <li>
-              <img src="./images/consist1.png" alt="Cover" />
-              <h2 class="consist-title-list">Чохол з білої мікрофібри</h2>
-              <p class="consist-description">
-                Міцна тканина, яка не тільки приємна на дотик, але й має
-                терморегулюючі властивості, що допомагають уникнути статичної
-                напруги.
+            <li class="consist-item">
+              <img class="consist-image" src="./images/consist1.png" alt="Cover" />
+              <div>
+                <h2 class="consist-title-list">Чохол з білої мікрофібри</h2>
+                <p class="consist-description">
+                  Міцна тканина, яка не тільки приємна на дотик, але й має
+                  терморегулюючі властивості, що допомагають уникнути статичної
+                  напруги.
+                </p>
+
+              </div>
+            </li>
+            <li class="consist-item">
+              <img class="consist-image" src="./images/consist2.png" alt="Cotton" />
+              <div>
+                <h2 class="consist-title-list">Хлопкопон</h2>
+                <p class="consist-description">
+                  Силіконізоване волокно з щільністю 200 г/м2. Цей наповнювач
+                  забезпечує м’якість і комфорт під час сну. Хлопкопон — це
+                  сучасний матеріал зі штучних волокон, який має високу
+                  еластичність і зберігає свою форму впродовж довгого періоду
+                  часу. Крім того, він забезпечує оптимальну циркуляцію повітря,
+                  що сприяє комфортній температурі під час сну.
+
+              </div>
               </p>
             </li>
-            <li>
-              <img src="./images/consist2.png" alt="Cotton" />
-              <h2 class="consist-title-list">Хлопкопон</h2>
-              <p class="consist-description">
-                Силіконізоване волокно з щільністю 200 г/м2. Цей наповнювач
-                забезпечує м’якість і комфорт під час сну. Хлопкопон — це
-                сучасний матеріал зі штучних волокон, який має високу
-                еластичність і зберігає свою форму впродовж довгого періоду
-                часу. Крім того, він забезпечує оптимальну циркуляцію повітря,
-                що сприяє комфортній температурі під час сну.
-              </p>
+            <li class="consist-item">
+              <img class="consist-image" src="./images/consist3.png" alt="Blanket sew" />
+              <div>
+                <h2 class="consist-title-list">Ковдра стьобана</h2>
+                <p class="consist-description">
+                  Ковдра має стьобану лініями поверхню з малюнком тиснявою
+                  “прямокутник”, що не лише зберігає форму виробу, але й надає
+                  йому привабливий зовнішній вигляд.
+                </p>
+
+              </div>
             </li>
-            <li>
-              <img src="./images/consist3.png" alt="Blanket sew" />
-              <h2 class="consist-title-list">Ковдра стьобана</h2>
-              <p class="consist-description">
-                Ковдра має стьобану лініями поверхню з малюнком тиснявою
-                “прямокутник”, що не лише зберігає форму виробу, але й надає
-                йому привабливий зовнішній вигляд.
-              </p>
-            </li>
-            <li>
-              <img src="./images/consist4.png" alt="Count decoration" />
-              <h2 class="consist-title-list">
-                Оздоблена білим кантом Тік (коса бейка)
-              </h2>
-              <p class="consist-description">
-                Це надає ковдрі привабливий зовнішній вигляд.
-              </p>
+            <li class="consist-item">
+              <img class="consist-image" src="./images/consist4.png" alt="Count decoration" />
+              <div>
+                <h2 class="consist-title-list">
+                  Оздоблена білим кантом Тік (коса бейка)
+                </h2>
+                <p class="consist-description">
+                  Це надає ковдрі привабливий зовнішній вигляд.
+                </p>
+
+              </div>
             </li>
           </ul>
+          
         </div>
       </section>
       <!-- block 4 - prices -->
       <section class="prices">
         <div class="container">
+          <div class="prices-table">
+
           <h2 class="prices-title">Таблиця порівняння</h2>
           <ul class="sample-list">
             <li>
               <img
+              class="blanket1-price"
                 src="./images/blanket1.png"
                 alt="Blanket Fine Dream Summer"
               />
@@ -123,13 +145,14 @@
             </li>
             <li>
               <img
+              class="blanket3-price"
                 src="./images/blanket3.png"
                 alt="Blanket Fine Ortick Spring"
               />
               <p class="sample-title">Fine Ortick Spring</p>
             </li>
-          </ul>
-          <ul>
+          <!-- </ul> -->
+          <!-- <ul> -->
             <li>
               <p>Розмір</p>
               <ul>
@@ -151,9 +174,10 @@
                 <li>Хлопкопон</li>
               </ul>
             </li>
-          </ul>
-          <h3 class="tagline">Здоровий сон починається з</h3>
-          <h3 class="logo-smart tagline">Smart</h3>
+          <!-- </ul> -->
+                    </div>
+
+          <h3 class="tagline">Здоровий сон починається з<br><span class="logo-smart">Smart</span></h3>
           <!-- <img
             src="./images/stars&clouds.png"
             alt="Stars and clouds bacground"

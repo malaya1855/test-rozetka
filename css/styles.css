@@ -1,17 +1,6 @@
 body {
   font-family: "Russo One", sans-serif;
 }
-h1 {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-}
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 33px;
-}
 
 /* reset start */
 h1,
@@ -156,6 +145,8 @@ img {
   font-size: 15px;
   margin-top: 16px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .hero-logo {
@@ -181,23 +172,150 @@ img {
 }
 
 /* <!-- block 2 - advantages --> */
+.advantages {
+  padding-bottom: 46px;
+}
 
 .list-adv {
   list-style: none;
   display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+.item-adv {
+  text-align: center;
 }
 
-.consist-description {
-  font-size: 24px;
+.advantages-title {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 7px;
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 37px;
+  }
+  .advantages-title {
+    font-size: 12px;
+    text-transform: none;
+  }
+  .advantages-description {
+    font-size: 9px;
+  }
+  .list-adv {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 200px;
+  }
+  .item-adv {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 76px;
+  }
+  .advantages-title {
+    font-size: 33px;
+  }
+  .advantages-description {
+    font-size: 24px;
+  }
+}
+
+/* <!-- block 3 - consist-- >  */
+
+.consist-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  flex-wrap: wrap;
 }
 .consist-title-list {
+  text-align: center;
+  font-size: 8px;
   color: #e27601;
 }
+.consist-description {
+  text-align: center;
+  font-size: 6px;
+}
+.consist-image {
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .consist-list {
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+  }
+  .consist-item {
+    display: flex;
+    align-items: center;
+  }
+  .consist-item:nth-child(even) .consist-image {
+    order: 2;
+    margin-right: 0;
+    margin-left: 37px;
+  }
+
+  .consist-title-list {
+    text-align: start;
+    font-size: 11px;
+  }
+  .consist-description {
+    text-align: start;
+    font-size: 9px;
+    width: auto;
+  }
+  .consist-image {
+    width: 323px;
+    margin-right: 37px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .consist-title-list {
+    font-size: 40px;
+  }
+  .consist-description {
+    font-size: 24px;
+  }
+  .consist-image {
+    width: 501px;
+    margin-right: 60px;
+  }
+  .consist-item:nth-child(even) .consist-image {
+    margin-right: 0;
+    margin-left: 60px;
+  }
+}
+
+/* <!-- block 4 - prices-- >  */
+
 .prices {
   background-image: url("/images/stars&clouds.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.prices-table {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .prices-table {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
 }
 .prices-title {
   font-size: 49px;
@@ -205,13 +323,47 @@ img {
 }
 .sample-list {
   display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .sample-title {
   font-size: 33px;
 }
 .logo-smart {
-  font-size: 47px;
+  font-size: 12px;
 }
 .tagline {
+  text-align: center;
+  font-size: 8px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .tagline {
+    font-size: 12px;
+  }
+  .logo-smart {
+    font-size: 16px;
+  }
+  .blanket1-price {
+    width: 381px;
+  }
+  .blanket3-price {
+    width: 401px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tagline {
+    font-size: 33px;
+  }
+  .logo-smart {
+    font-size: 47px;
+  }
+  .blanket1-price {
+    width: 566px;
+  }
+  .blanket3-price {
+    width: 607px;
+  }
 }
