@@ -73,8 +73,8 @@ img {
 
   background-image: url("/images/stars.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: left;
+  background-size: auto;
 }
 
 .logo {
@@ -102,15 +102,17 @@ img {
 .blanket2 {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .hero-container {
-    position: relative;
     height: 600px;
+    position: relative;
   }
+
   .blanket1 {
     width: 521px;
     position: absolute;
-    left: 0;
+    /* left: 0; */
     bottom: 0;
     z-index: 2;
   }
@@ -125,7 +127,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
-    height: 600px;
+    height: 873px;
+    position: relative;
+  }
+  .blankets-sample {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
   }
 
   .blanket1 {
@@ -159,7 +167,7 @@ img {
   .hero-title-main {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -189,6 +197,7 @@ img {
 .advantages-title {
   font-size: 8px;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .advantages-description {
@@ -201,6 +210,7 @@ img {
   .advantages-title {
     font-size: 12px;
     text-transform: none;
+    margin-bottom: 31px;
   }
   .advantages-description {
     font-size: 9px;
@@ -220,6 +230,7 @@ img {
   }
   .advantages-title {
     font-size: 33px;
+    margin-bottom: 37px;
   }
   .advantages-description {
     font-size: 24px;
@@ -304,32 +315,101 @@ img {
 .prices {
   background-image: url("/images/stars&clouds.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: bottom;
+  background-size: contain;
 }
 .prices-table {
   display: none;
 }
+.container-prices {
+  padding-top: 37px;
+  padding-bottom: 101px;
+}
 @media screen and (min-width: 768px) {
   .prices-table {
     display: block;
+    margin-bottom: 64px;
+  }
+  .container-prices {
+    padding-top: 54px;
+    padding-bottom: 265px;
+  }
+  .prices-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .sample-list {
+    margin-bottom: 54px;
+  }
+  .sample-list,
+  .characteristics-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+  }
+  .sample-title {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 29px;
+  }
+  .table-cells-prices {
+    background-color: #e27601;
+    width: 453px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+  .item-characteristics-prices {
+    margin-bottom: 20px;
+  }
+  .title-characteristics-prices {
+    color: #e27601;
+
+    font-size: 9px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .container-prices {
+    padding-top: 77px;
+    padding-bottom: 343px;
+  }
+  .prices-table {
+    margin-bottom: 78px;
+  }
+  .sample-list {
+    margin-bottom: 49px;
+  }
+  .sample-title {
+    font-size: 33px;
+    margin-top: 37px;
+  }
+  .prices-title {
+    font-size: 49px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+  }
+  .table-cells-prices {
+    width: 710px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    font-size: 24px;
+  }
+  .title-characteristics-prices {
+    font-size: 27px;
+    margin-bottom: 19px;
+  }
+  .item-characteristics-prices {
+    margin-bottom: 19px;
+  }
 }
-.prices-title {
-  font-size: 49px;
-  text-transform: uppercase;
-}
-.sample-list {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.sample-title {
-  font-size: 33px;
-}
+
 .logo-smart {
   font-size: 12px;
 }
