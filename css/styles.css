@@ -40,23 +40,23 @@ img {
 
 .container {
   min-width: 320px;
-  max-width: 331px;
+  max-width: 322px;
   /* padding-top: 31px;
   padding-bottom: 44px; */
-  padding: 0 23px;
+  padding: 0 20px;
   margin: 0 auto;
   outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1028px;
-    padding: 0 53px;
+    padding: 0 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1539px;
-    padding: 0 48px;
+    /* padding: 0 50px; */
   }
 }
 /* <!-- block 1 - hero --> */
@@ -106,23 +106,23 @@ img {
 @media screen and (min-width: 768px) {
   .hero-container {
     height: 600px;
-    position: relative;
+    /* position: relative; */
   }
 
-  .blanket1 {
-    width: 521px;
-    position: absolute;
-    /* left: 0; */
-    bottom: 0;
-    z-index: 2;
-  }
   .blanket2 {
     display: block;
     width: 619px;
     position: absolute;
-    left: 300px;
+    /* left: 300px;
     bottom: 20px;
-    z-index: 1;
+    z-index: 1; */
+  }
+  .blanket1 {
+    width: 521px;
+    position: absolute;
+    /* left: 0; */
+    /* bottom: 0;
+    z-index: 2; */
   }
 }
 @media screen and (min-width: 1200px) {
@@ -133,7 +133,7 @@ img {
   .blankets-sample {
     margin-left: auto;
     margin-right: auto;
-    z-index: 3;
+    /* z-index: 3; */
   }
 
   .blanket1 {
